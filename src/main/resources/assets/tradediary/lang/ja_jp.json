@@ -1,0 +1,12 @@
+{
+  "item.tradediary.diary": "取引日記",
+  "key.categories.tradediary": "Trade Diary",
+  "key.tradediary.open_diary": "取引日記を開く",
+  "tradediary.screen.title": "Trade Diary",
+  "tradediary.screen.page": "%s / %s ページ",
+  "tradediary.screen.empty": "村人と取引を始めると日記が始まります",
+  "tradediary.screen.search": "検索",
+  "tradediary.screen.search.hint": "検索…",
+  "advancement.tradediary.welcome.title": "Trade Diary へようこそ",
+  "advancement.tradediary.welcome.description": "あなたの取引記録はここから始まる。"
+}
