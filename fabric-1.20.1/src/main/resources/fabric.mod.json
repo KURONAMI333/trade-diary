@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": ["${mod_authors}"],
+  "contact": {
+    "homepage": "https://github.com/KURONAMI333/trade-diary",
+    "issues":   "https://github.com/KURONAMI333/trade-diary/issues",
+    "sources":  "https://github.com/KURONAMI333/trade-diary"
+  },
+  "license": "${mod_license}",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main":   ["com.kuronami.tradediary.TradeDiaryFabric"],
+    "client": ["com.kuronami.tradediary.client.TradeDiaryClient"]
+  },
+
+  "mixins": [
+    "tradediary.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15",
+    "fabric-api":   "*",
+    "minecraft":    "~1.20.1",
+    "java":         ">=17",
+    "patchouli":    ">=1.20.1-84"
+  }
+}
