@@ -1,0 +1,39 @@
+package com.kuronami.tradediary;
+
+import com.kuronami.tradediary.item.TradeDiaryItems;
+import com.mojang.logging.LogUtils;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
+import org.slf4j.Logger;
+
+/**
+ * Trade Diary — auto-record your achievements with timestamp, location, and context.
+ *
+ * Listens to {@code PlayerAdvancementEarnEvent} and persists structured entries
+ * (time / coords / dimension / biome / advancement details) to per-world data.
+ * Players review the entries via a custom Screen opened by hotkey.
+ *
+ * <p>NeoForge 1.21.1 entry point. Sub-projects (Forge / Fabric × 1.20.1 / 1.21.1)
+ * mirror this with loader-specific event APIs but share the persistence + UI layer.
+ */
+@Mod(TradeDiary.MODID)
+public final class TradeDiary {
+
+    public static final String MODID = "tradediary";
+    public static final Logger LOGGER = LogUtils.getLogger();
+
+    public TradeDiary(IEventBus modEventBus) {
+        // mod lifecycle bus: register data attachments / capabilities here
+        modEventBus.addListener(TradeDiary::onCommonSetup);
+
+        // item registry — Journal aka the right-click-to-open book
+        TradeDiaryItems.register(modEventBus);
+
+        LOGGER.info("Trade Diary loaded — listening for adventures.");
+    }
+
+    private static void onCommonSetup(net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) {
+        LOGGER.info("Trade Diary common setup complete.");
+    }
+}

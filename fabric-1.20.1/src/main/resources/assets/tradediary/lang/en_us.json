@@ -1,0 +1,12 @@
+{
+  "item.tradediary.diary": "Trade Diary",
+  "key.categories.tradediary": "Trade Diary",
+  "key.tradediary.open_diary": "Open Trade Diary",
+  "tradediary.screen.title": "Trade Diary",
+  "tradediary.screen.page": "Page %s / %s",
+  "tradediary.screen.empty": "Trade with a villager to begin your diary",
+  "tradediary.screen.search": "search",
+  "tradediary.screen.search.hint": "Search…",
+  "advancement.tradediary.welcome.title": "Welcome to Trade Diary",
+  "advancement.tradediary.welcome.description": "Your trading record begins here."
+}

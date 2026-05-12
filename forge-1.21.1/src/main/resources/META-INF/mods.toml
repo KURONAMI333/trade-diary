@@ -1,0 +1,15 @@
+# Trade Diary - Forge mods.toml (1.21.1)
+modLoader="javafml"
+loaderVersion="[52,)"
+license="MIT"
+
+[[mods]]
+modId="tradediary"
+version="${file.jarVersion}"
+displayName="Trade Diary"
+authors="KURONAMI"
+displayURL="https://github.com/KURONAMI333/trade-diary"
+issueTrackerURL="https://github.com/KURONAMI333/trade-diary/issues"
+description='''
+Auto-record every villager trade with timestamp, location, and trade details — your own trader's diary.
+'''
