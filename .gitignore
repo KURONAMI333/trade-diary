@@ -42,3 +42,7 @@ repo/
 ### 3rd-party jars (NOT redistributable) ###
 libs-local/
 **/libs-local/
+
+### Release artifacts (staged for upload, not source) ###
+_release/v*/
+
