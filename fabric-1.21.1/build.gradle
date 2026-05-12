@@ -1,0 +1,69 @@
+plugins {
+    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+repositories {
+    // BlameJared hosts Patchouli's NeoForge / Forge / Fabric maven artifacts.
+    maven {
+        url = "https://maven.blamejared.com"
+        content { includeGroup "vazkii.patchouli" }
+    }
+}
+
+// Field Notes uses Fabric Mixin to hook PlayerAdvancements.award (no first-class
+// advancement event in Fabric). Patchouli provides the book_brown.png texture
+// the chronicle viewer renders against.
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    modImplementation "vazkii.patchouli:Patchouli:1.21.1-92-FABRIC"
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_version": minecraft_version,
+                "loader_version": loader_version,
+                "fabric_version": fabric_version,
+                "mod_id": mod_id,
+                "mod_name": mod_name,
+                "mod_description": mod_description,
+                "mod_authors": mod_authors,
+                "mod_license": mod_license
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+// Mixin AP の strict mode 無効化 (外部 mod method の解決を skip)
+loom {
+    mixin {
+        useLegacyMixinAp = false
+    }
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${mod_id}" }
+    }
+}
