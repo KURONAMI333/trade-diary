@@ -1,7 +1,7 @@
 # Trade Diary - Forge mods.toml (1.21.1)
 modLoader="javafml"
 loaderVersion="[52,)"
-license="MIT"
+license="All Rights Reserved"
 
 [[mods]]
 modId="tradediary"

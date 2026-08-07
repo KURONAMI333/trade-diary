@@ -2,7 +2,7 @@
 
 > Auto-record every villager trade with timestamp, location, and trade details — your own trader's diary.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)](LICENSE)
 [![Modrinth](https://img.shields.io/badge/Modrinth-trade--diary-00AF5C)](https://modrinth.com/mod/trade-diary)
 [![CurseForge](https://img.shields.io/badge/CurseForge-trade--diary-F16436)](https://www.curseforge.com/minecraft/mc-mods/trade-diary)
 
@@ -116,7 +116,7 @@ Each sub-project produces a single jar under its own `build/libs/`.
 
 ## License
 
-[MIT License](LICENSE) — modpack inclusion welcome, no credit required.
+[All Rights Reserved](LICENSE) — modpack inclusion welcome, no credit required. Source is published so you can read exactly what it does.
 
 ## Credits
 
