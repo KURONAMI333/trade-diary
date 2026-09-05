@@ -18,4 +18,6 @@ Entries are saved per world under `<world>/data/tradediary/<player-uuid>.json`, 
 
 Install on the server and on each client — the server records trades, the diary viewer is client-side.
 
-Free to use in any modpack. Source and issues: https://github.com/KURONAMI333/trade-diary
+Bugs and questions: comment on the CurseForge page, or DM @kuronami333 on X.
+
+Free to use in any modpack. Source: https://github.com/KURONAMI333/trade-diary
