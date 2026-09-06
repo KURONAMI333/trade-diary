@@ -3,7 +3,7 @@
 One-shot: patches project metadata (body, license, source_url, etc.),
 uploads the icon, then uploads the 4 v0.1.0 jars.
 
-Reads PAT from claude-memory/kuronami-mods/tools/.tokens/.modrinth_token.
+Reads PAT from kuronami-mods/tools/.tokens/.modrinth_token.
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ VERSION = "0.1.0"
 
 REPO = Path(__file__).resolve().parent.parent  # mod-008-trade-diary
 TOKEN_PATH = Path(
-    r"C:\Users\naoki\claude-memory\kuronami-mods\tools\.tokens\.modrinth_token"
+    str(Path.home() / "dev/projects/minecraft-mod-dev/kuronami-mods/tools/.tokens" / ".modrinth_token")
 )
 ICON_PATH = REPO / "logo.png"
 
@@ -94,7 +94,7 @@ Cycle the bottom-right button to filter:
 
 PROJECT_PATCH = {
     "body": BODY,
-    "license_id": "MIT",
+    "license_id": "LicenseRef-All-Rights-Reserved",
     "source_url": "https://github.com/KURONAMI333/trade-diary",
     "issues_url": "https://github.com/KURONAMI333/trade-diary/issues",
     "categories": ["utility", "social"],
