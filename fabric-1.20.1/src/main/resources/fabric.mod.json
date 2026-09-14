@@ -7,7 +7,7 @@
   "authors": ["${mod_authors}"],
   "contact": {
     "homepage": "https://github.com/KURONAMI333/trade-diary",
-    "issues":   "https://github.com/KURONAMI333/trade-diary/issues",
+    "issues":   "https://x.com/kuronami333",
     "sources":  "https://github.com/KURONAMI333/trade-diary"
   },
   "license": "${mod_license}",

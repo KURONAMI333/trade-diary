@@ -10,7 +10,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 authors="KURONAMI"
 displayURL="https://github.com/KURONAMI333/trade-diary"
-issueTrackerURL="https://github.com/KURONAMI333/trade-diary/issues"
+issueTrackerURL="https://x.com/kuronami333"
 description='''
 Auto-record every villager trade with timestamp, location, and trade details — your own trader's diary.
 '''

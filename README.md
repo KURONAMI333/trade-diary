@@ -123,3 +123,11 @@ Each sub-project produces a single jar under its own `build/libs/`.
 - Author: KURONAMI
 - Texture dependency: [Vazkii's Patchouli](https://github.com/VazkiiMods/Patchouli)
   (CC BY-NC-SA 3.0)
+
+## Downloads and support
+
+Downloads: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/trade-diary).
+
+For bugs and questions, comment on the [CurseForge page](https://www.curseforge.com/minecraft/mc-mods/trade-diary) or DM [@kuronami333 on X](https://x.com/kuronami333).
+
+[Source](https://github.com/KURONAMI333/trade-diary) · [License](LICENSE)

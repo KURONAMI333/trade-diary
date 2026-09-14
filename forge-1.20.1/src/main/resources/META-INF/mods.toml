@@ -8,7 +8,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
 displayURL="https://github.com/KURONAMI333/trade-diary"
-issueTrackerURL="https://github.com/KURONAMI333/trade-diary/issues"
+issueTrackerURL="https://x.com/kuronami333"
 description='''
 ${mod_description}
 '''

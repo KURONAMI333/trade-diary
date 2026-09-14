@@ -96,7 +96,7 @@ PROJECT_PATCH = {
     "body": BODY,
     "license_id": "LicenseRef-All-Rights-Reserved",
     "source_url": "https://github.com/KURONAMI333/trade-diary",
-    "issues_url": "https://github.com/KURONAMI333/trade-diary/issues",
+    "issues_url": "",
     "categories": ["utility", "social"],
     "client_side": "required",
     "server_side": "required",
