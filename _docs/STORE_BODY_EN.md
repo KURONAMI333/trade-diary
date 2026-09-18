@@ -1,5 +1,3 @@
-# Trade Diary
-
 A trader's diary that records every villager trade — what you gave, what you got, who you traded with, where, and when — persisted per world.
 
 Open it by right-clicking the **Diary** item, crafted from `book + emerald`. Each completed trade with a villager or wandering trader appends an entry:
@@ -16,8 +14,6 @@ Entries are saved per world under `<world>/data/tradediary/<player-uuid>.json`, 
 
 - [Patchouli](https://modrinth.com/mod/patchouli) — required; it provides the book texture the diary renders on. Trade Diary doesn't bundle it (Patchouli is CC BY-NC-SA), so add it alongside.
 
-Install on the server and on each client — the server records trades, the diary viewer is client-side.
-
 Bugs and questions: comment on the CurseForge page, or DM @kuronami333 on X.
 
-Free to use in any modpack. Source: https://github.com/KURONAMI333/trade-diary
+All Rights Reserved. Modpack inclusion is allowed without permission or credit. Source: https://github.com/KURONAMI333/trade-diary
