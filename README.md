@@ -3,7 +3,6 @@
 > Auto-record every villager trade with timestamp, location, and trade details — your own trader's diary.
 
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey.svg)](LICENSE)
-[![Modrinth](https://img.shields.io/badge/Modrinth-trade--diary-00AF5C)](https://modrinth.com/mod/trade-diary)
 [![CurseForge](https://img.shields.io/badge/CurseForge-trade--diary-F16436)](https://www.curseforge.com/minecraft/mc-mods/trade-diary)
 
 ---
